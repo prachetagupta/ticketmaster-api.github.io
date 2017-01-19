@@ -1,0 +1,37 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that RESET button works properly" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that RESET button works properly" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12350" timestamp="2017-01-19T11:29:51.672Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2001">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And store all fields values on the Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1042">
+      <description>Store values for all fields</description>
+    </test-step>
+  </test-group>
+  <test-group name="And change values for all possible fields on the Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="6960">
+      <description>Change values for all fields</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click reset button" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1796">
+      <description>Reset form</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then all fields have been reseted to defaults on the Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="486">
+      <description>Check that all fields have been reseted to defaults</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="31">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

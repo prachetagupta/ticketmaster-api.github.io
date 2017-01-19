@@ -1,0 +1,68 @@
+<story path="stories/site/widgets/CalendarWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">setup Calendar Widget</inOrderTo>
+  <asA keyword="As a">developer</asA>
+  <iWantTo keyword="I want to">use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that required fields are not empty">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">Then the required fields are not empty on the Calendar Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that embed code functionality works properly">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">And change values for: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">And store values of: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored values of: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code">
+<examples keyword="Examples:">
+<step>Given open Calendar Widget page</step>
+<step>When change value of Zip Code &lt;zipCode&gt;</step>
+<step>Then the Country field contains appropriate value &lt;countryName&gt;</step>
+<parameters>
+<names><name>zipCode</name><name>countryName</name></names>
+<values><value>01000</value><value>France</value></values>
+<values><value>K1P 1J1</value><value>Canada</value></values>
+</parameters>
+
+<example keyword="Example:">{zipCode=01000, countryName=France}</example>
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">When change value of Zip Code <parameter>01000</parameter></step>
+<step outcome="successful">Then the Country field contains appropriate value <parameter>France</parameter></step>
+
+<example keyword="Example:">{zipCode=K1P 1J1, countryName=Canada}</example>
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">When change value of Zip Code <parameter>K1P 1J1</parameter></step>
+<step outcome="successful">Then the Country field contains appropriate value <parameter>Canada</parameter></step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">And store values of: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">And change values for: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">When click reset button</step>
+<step outcome="successful">Then values of fields: <parameter>apiKey,keyword,zipCode,radius</parameter> equals stored values</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">And store values of: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">And change values for: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+<step outcome="successful">When click reset button on Calendar Widget Page</step>
+<step outcome="successful">And click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored values of: <parameter>apiKey,keyword,zipCode,radius</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">When I click on the &apos;Get your own&apos; link to get api key</step>
+<step outcome="successful">Then The page is opened with url <parameter>https://developer-acct.ticketmaster.com</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/calendar/) Event message - Check event message for invalid API Key">
+<step outcome="successful">Given open Calendar Widget page</step>
+<step outcome="successful">And enter custom ApiKey <parameter>invalidApiKey123</parameter></step>
+<step outcome="successful">Then the event message is shown &quot;No results were found&quot;</step>
+</scenario>
+</story>

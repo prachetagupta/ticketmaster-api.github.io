@@ -1,0 +1,155 @@
+<story path="stories/site/widgets/CountdownWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">setup Countdown Widget</inOrderTo>
+  <asA keyword="As a">developer</asA>
+  <iWantTo keyword="I want to">use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that required fields are not empty">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">Then the required fields are not empty on the Countdown Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Verification of default embed code">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And store ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored ApiKey and EventId</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that embed code functionality works properly">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And change value for ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">And store ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored ApiKey and EventId</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check RESET button functionality">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And store ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">And change value for ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">When submit form</step>
+<step outcome="successful">And click reset button</step>
+<step outcome="successful">Then the ApiKey and EventId fields have stored values</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check RESET button functionality on Embedded Code Pop-up window">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And store ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">And change value for ApiKey and EventId on Countdown Widget page</step>
+<step outcome="successful">When submit form</step>
+<step outcome="successful">And click reset button</step>
+<step outcome="successful">And click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored ApiKey and EventId</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Get new EventId">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">When User is logged to site (Countdown Widget)</step>
+<step outcome="successful">And get eventId by keyword <parameter>ADELE</parameter></step>
+<step outcome="successful">And set first eventId from list</step>
+<step outcome="successful">Then the event poster contains <parameter>ADELE</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check links">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">When I click on the &apos;Get your own&apos; link to get api key</step>
+<step outcome="successful">Then The page is opened with url <parameter>https://developer-acct.ticketmaster.com</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Full-width mode">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to full-width</step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored theme</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Resolutions">
+<examples keyword="Examples:">
+<step>Given open Countdown Widget page</step>
+<step>And switch to VISUAL Tab</step>
+<step>And set theme to poster</step>
+<step>And set layout resolution to &lt;layoutResolution&gt;</step>
+<step>When click on &quot;Get code&quot; button</step>
+<step>Then the pop-up Embedded Code is opened</step>
+<step>And embedded html code contains stored layout resolution</step>
+<parameters>
+<names><name>layoutResolution</name></names>
+<values><value>300x600</value></values>
+<values><value>300x250</value></values>
+<values><value>custom</value></values>
+</parameters>
+
+<example keyword="Example:">{layoutResolution=300x600}</example>
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>300x600</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+
+<example keyword="Example:">{layoutResolution=300x250}</example>
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>300x250</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+
+<example keyword="Example:">{layoutResolution=custom}</example>
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>custom</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Orientations">
+<examples keyword="Examples:">
+<step>Given open Countdown Widget page</step>
+<step>And switch to VISUAL Tab</step>
+<step>And set theme to poster</step>
+<step>And set layout orientation to &lt;orientation&gt;</step>
+<step>When click on &quot;Get code&quot; button</step>
+<step>Then the pop-up Embedded Code is opened</step>
+<step>And embedded html code contains stored layout orientation</step>
+<parameters>
+<names><name>orientation</name></names>
+<values><value>horizontal</value></values>
+<values><value>vertical</value></values>
+</parameters>
+
+<example keyword="Example:">{orientation=horizontal}</example>
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout orientation to <parameter>horizontal</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout orientation</step>
+
+<example keyword="Example:">{orientation=vertical}</example>
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout orientation to <parameter>vertical</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout orientation</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) Event message - Check event message for invalid API Key">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And enter custom ApiKey <parameter>{InvalidApiKey123}</parameter></step>
+<step outcome="successful">When submit form</step>
+<step outcome="successful">Then the event message is shown &quot;No results were found&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/countdown/) Event message - Check event message for invalid Event ID">
+<step outcome="successful">Given open Countdown Widget page</step>
+<step outcome="successful">And enter custom EventId <parameter>&quot;invalidEventId123&quot;</parameter></step>
+<step outcome="successful">When submit form</step>
+<step outcome="successful">Then the event message is shown &quot;No results were found&quot;</step>
+</scenario>
+</story>

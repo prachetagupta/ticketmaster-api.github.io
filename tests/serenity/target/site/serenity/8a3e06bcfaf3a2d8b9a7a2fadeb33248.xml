@@ -1,0 +1,99 @@
+<acceptance-test-run title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Orientations" name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Orientations" steps="14" successful="14" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12839" timestamp="2017-01-19T11:27:48.162Z" session-id="19664bf8-ecae-4872-ba62-3609d47a3c2b">
+  <user-story id="CountdownWidget" name="Countdown widget" path="stories/site/widgets/CountdownWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Countdown widget" type="story"/>
+    <tag name="Widgets/Countdown widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>orientation</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>horizontal</value>
+      </row>
+      <row result="SUCCESS">
+        <value>vertical</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {orientation=horizontal}" result="SUCCESS">
+    <test-group name="Given open Countdown Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="995">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1030">
+        <description>Switch to tab: visual</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set theme to poster" result="SUCCESS">
+      <test-step result="SUCCESS" duration="471">
+        <description>Set poster theme</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set layout orientation to {horizontal}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="744">
+        <description>Set layout orientation: horizontal</description>
+      </test-step>
+    </test-group>
+    <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="735">
+        <description>Click on get button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2348">
+        <description>Check that popup embedded code is opened</description>
+      </test-step>
+    </test-group>
+    <test-group name="And embedded html code contains stored layout orientation" result="SUCCESS">
+      <test-step result="SUCCESS" duration="76">
+        <description>Check that embedded code contains stored orientation</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {orientation=vertical}" result="SUCCESS">
+    <test-group name="Given open Countdown Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1165">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+      <test-step result="SUCCESS" duration="831">
+        <description>Switch to tab: visual</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set theme to poster" result="SUCCESS">
+      <test-step result="SUCCESS" duration="467">
+        <description>Set poster theme</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set layout orientation to {vertical}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="695">
+        <description>Set layout orientation: vertical</description>
+      </test-step>
+    </test-group>
+    <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="819">
+        <description>Click on get button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2333">
+        <description>Check that popup embedded code is opened</description>
+      </test-step>
+    </test-group>
+    <test-group name="And embedded html code contains stored layout orientation" result="SUCCESS">
+      <test-step result="SUCCESS" duration="105">
+        <description>Check that embedded code contains stored orientation</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

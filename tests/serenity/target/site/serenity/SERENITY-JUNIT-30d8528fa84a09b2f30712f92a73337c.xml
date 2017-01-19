@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="12" name="Home" skipped="0" tests="14" time="101.14" timestamp="2017-01-19 11:12:35"><testcase name="(/Home Page/) Verification for general page elements"/><testcase name="(/Home Page/) Verification for twitter's list of events"/><testcase name="(/Home Page/) Verification for all the page links"><failure message="Element should be visible" type="java.lang.AssertionError">Element should be visible</failure><system-err>Element should be visible
+bla.tm.pages.AnyPage.keyPageElementIsVisible(AnyPage.java:8)
+bla.tm.steps.AnyPageSteps.checkIfPageIsOpened(AnyPageSteps.java:24)
+bla.tm.definitions.site.HomePageDefinition.checkIfPageIsOpened(HomePageDefinition.java:44)
+</system-err></testcase></testsuite>

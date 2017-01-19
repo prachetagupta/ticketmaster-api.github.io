@@ -1,0 +1,21 @@
+<acceptance-test-run title="(/blogs/) Verification for general page&apos;s elements" name="(/blogs/) Verification for general page&apos;s elements" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="34008" timestamp="2017-01-19T11:18:43.261Z" session-id="60634a64-d540-4e48-ad44-ebc36582dcc7">
+  <user-story id="Blogs" name="Blogs" path="stories/site/Blogs.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Blogs" type="story"/>
+    <tag name="Site/Blogs" type="story"/>
+  </tags>
+  <test-group name="Given open Blogs page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3585">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Blogs Page, where DISQUS = {false} and LeftMenu = {false}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="30368">
+      <description>Check general page elements: false, false</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="28">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

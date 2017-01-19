@@ -1,0 +1,40 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/FeedbackWidget.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> send feedback</div>
+<div class="element asA"><span class="keyword asA">As a</span> user of Ticketmaster Developer Portal</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use the feedback widget
+and have ability to send feedback form to support</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (feedback widget) Check that Feedback widget Elements are shown</h2>
+<div class="step successful">Given open Tutorials Widgets page</div>
+<div class="step successful">And Feedback widget is not shown</div>
+<div class="step successful">When click Feedback button of Tutorials Widgets page</div>
+<div class="step successful">Then Feedback widget elements are shown</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (feedback widget) Feedback widget Close button</h2>
+<div class="step successful">Given open Tutorials Widgets page</div>
+<div class="step successful">When click Feedback button of Tutorials Widgets page</div>
+<div class="step successful">Then click close button of Feedback widget</div>
+<div class="step successful">And Feedback widget is not shown</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (feedback widget) Feedback widget error notifications for NAME field</h2>
+<div class="step successful">Given open Tutorials Widgets page</div>
+<div class="step successful">And click Feedback button of Tutorials Widgets page</div>
+<div class="step successful">When all fields except Name are populated</div>
+<div class="step successful">And click send button of Feedback widget</div>
+<div class="step successful">Then error notification is shown for Feedback widget</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (feedback widget) Feedback widget error notifications for Email field</h2>
+<div class="step successful">Given open Tutorials Widgets page</div>
+<div class="step successful">And click Feedback button of Tutorials Widgets page</div>
+<div class="step successful">When all fields except Email are populated</div>
+<div class="step successful">And click send button of Feedback widget</div>
+<div class="step successful">Then error notification is shown for Feedback widget</div>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<acceptance-test-run title="(developer-acct.ticketmaster.com/user/login) Verification for general page&apos;s elements" name="(developer-acct.ticketmaster.com/user/login) Verification for general page&apos;s elements" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24176" timestamp="2017-01-19T11:14:50.664Z" session-id="5c07f876-4510-44c8-84c0-345d717a6d30">
+  <user-story id="UserLogIn" name="User log in" path="stories/site/pantheon/UserLogIn.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Pantheon" type="feature"/>
+    <tag name="Pantheon/User log in" type="story"/>
+    <tag name="User log in" type="story"/>
+  </tags>
+  <test-group name="Given open Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2743">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon LogIn page from Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="999">
+      <description>Click log in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="56">
+      <description>Is page opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Pantheon User LonIn page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="29">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20285">
+      <description>Check general page elements</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="37">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

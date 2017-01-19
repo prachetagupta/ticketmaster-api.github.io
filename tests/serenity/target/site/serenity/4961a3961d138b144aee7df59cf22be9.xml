@@ -1,0 +1,62 @@
+<acceptance-test-run title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code" name="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8520" timestamp="2017-01-19T11:19:31.118Z" session-id="d1700774-dded-4930-a313-a96950a3a8ff">
+  <user-story id="CalendarWidget" name="Calendar widget" path="stories/site/widgets/CalendarWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Calendar widget" type="story"/>
+    <tag name="Widgets/Calendar widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>zipCode</header>
+      <header>countryName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>01000</value>
+        <value>France</value>
+      </row>
+      <row result="SUCCESS">
+        <value>K1P 1J1</value>
+        <value>Canada</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {zipCode=01000, countryName=France}" result="SUCCESS">
+    <test-group name="Given open Calendar Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1767">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When change value of Zip Code {01000}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2196">
+        <description>Set zip code value: 01000</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the Country field contains appropriate value {France}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="86">
+        <description>Field country contains: France</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {zipCode=K1P 1J1, countryName=Canada}" result="SUCCESS">
+    <test-group name="Given open Calendar Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2523">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When change value of Zip Code {K1P 1J1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1843">
+        <description>Set zip code value: K1P 1J1</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the Country field contains appropriate value {Canada}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="75">
+        <description>Field country contains: Canada</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

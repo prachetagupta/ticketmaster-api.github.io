@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/widgets/calendar/) Verification for general page&apos;s elements" name="(/products-and-docs/widgets/calendar/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4842" timestamp="2017-01-19T11:18:22.582Z" session-id="717ca6ff-c5f7-43b0-94eb-1b9f878088ec">
+  <user-story id="PD_Widget_Calendar" name="Pd  widget  calendar" path="stories/site/products_and_docs/PD_Widget_Calendar.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  widget  calendar" type="story"/>
+    <tag name="Products and docs/Pd widget calendar" type="story"/>
+  </tags>
+  <test-group name="Given open Calendar Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3402">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Calendar Widget Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="985">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="393">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="24">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

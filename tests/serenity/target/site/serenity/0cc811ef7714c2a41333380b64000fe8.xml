@@ -1,0 +1,87 @@
+<acceptance-test-run title="(/products-and-docs/tutorials/widgets/) Verification for all the page&apos;s links" name="(/products-and-docs/tutorials/widgets/) Verification for all the page&apos;s links" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8424" timestamp="2017-01-19T11:25:12.235Z" session-id="d4bdca85-c982-4083-a4ba-31721c513f90">
+  <user-story id="PD_Tutorials_Widgets" name="Pd  tutorials  widgets" path="stories/site/products_and_docs/PD_Tutorials_Widgets.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  tutorials  widgets" type="story"/>
+    <tag name="Products and docs/Pd tutorials widgets" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>elementKey</header>
+      <header>pageURL</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Button</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Header Link</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Image Link</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {elementKey=Adding Event Discovery Widget Button, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1440">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Button} element of Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1841">
+        <description>Validate and click element: Adding Event Discovery Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials Widgets page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="37">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {elementKey=Adding Event Discovery Widget Header Link, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="830">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Header Link} element of Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1378">
+        <description>Validate and click element: Adding Event Discovery Widget Header Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials Widgets page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="315">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {elementKey=Adding Event Discovery Widget Image Link, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="634">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Image Link} element of Tutorials Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="152">
+        <description>Validate and click element: Adding Event Discovery Widget Image Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials Widgets page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1768">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

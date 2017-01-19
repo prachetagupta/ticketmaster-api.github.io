@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/tutorials/) Verification for general page&apos;s elements" name="(/products-and-docs/tutorials/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13096" timestamp="2017-01-19T11:25:44.058Z" session-id="cbca65af-b277-47f2-af28-e39c00e92424">
+  <user-story id="PD_Tutorials" name="Pd  tutorials" path="stories/site/products_and_docs/PD_Tutorials.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  tutorials" type="story"/>
+    <tag name="Products and docs/Pd tutorials" type="story"/>
+  </tags>
+  <test-group name="Given open Tutorials page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2697">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Tutorials Page, where DISQUS = {false} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="127">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10211">
+      <description>Check general page elements: false, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="41">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

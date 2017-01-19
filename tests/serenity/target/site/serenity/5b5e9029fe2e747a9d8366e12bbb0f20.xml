@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/widgets/) Verification for general page&apos;s elements" name="(/products-and-docs/widgets/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13372" timestamp="2017-01-19T11:15:54.938Z" session-id="a810b6ce-c1b7-4a07-80cd-dd10c68acc32">
+  <user-story id="PD_Widgets" name="Pd  widgets" path="stories/site/products_and_docs/PD_Widgets.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  widgets" type="story"/>
+    <tag name="Products and docs/Pd widgets" type="story"/>
+  </tags>
+  <test-group name="Given open Widgets page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2950">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Widgets Page, where DISQUS = {false} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="104">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10234">
+      <description>Check general page elements: false, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="26">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

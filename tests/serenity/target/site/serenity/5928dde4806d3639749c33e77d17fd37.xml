@@ -1,0 +1,51 @@
+<acceptance-test-run title="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that embed code functionality works properly" name="(/products-and-docs/widgets/countdown/) TECHNICAL TAB - Check that embed code functionality works properly" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6916" timestamp="2017-01-19T11:26:43.995Z" session-id="19664bf8-ecae-4872-ba62-3609d47a3c2b">
+  <user-story id="CountdownWidget" name="Countdown widget" path="stories/site/widgets/CountdownWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Countdown widget" type="story"/>
+    <tag name="Widgets/Countdown widget" type="story"/>
+  </tags>
+  <test-group name="Given open Countdown Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2874">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And change value for ApiKey and EventId on Countdown Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="328">
+      <description>Set api key: anyApiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="198">
+      <description>Set event id: anyEventId</description>
+    </test-step>
+  </test-group>
+  <test-group name="And store ApiKey and EventId on Countdown Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="77">
+      <description>Store current api key</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="45">
+      <description>Store current event id</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+    <test-step result="SUCCESS" duration="708">
+      <description>Click on get button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2448">
+      <description>Check that popup embedded code is opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="And embedded html code contains stored ApiKey and EventId" result="SUCCESS">
+    <test-step result="SUCCESS" duration="104">
+      <description>Check that embedded code contains stored api key</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>Check that embedded code contains stored event id</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="23">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

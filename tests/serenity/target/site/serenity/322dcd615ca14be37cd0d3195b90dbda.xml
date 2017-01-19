@@ -1,0 +1,124 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of RADIUS" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of RADIUS" steps="16" successful="16" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14028" timestamp="2017-01-19T11:29:37.637Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>setValue</header>
+      <header>actualValue</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>0</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>1</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>19999</value>
+        <value>19999</value>
+      </row>
+      <row result="SUCCESS">
+        <value>20000</value>
+        <value>19999</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {setValue=0, actualValue=1}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2376">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And change value of ZipCode {90015} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="797">
+        <description>Set zip code value: 90015</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Radius {0} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="763">
+        <description>Set radius: 0</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then Radius value is {1} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="75">
+        <description>Check that radius value equals actual value: 1</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {setValue=1, actualValue=1}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2688">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And change value of ZipCode {90015} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="744">
+        <description>Set zip code value: 90015</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Radius {1} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="262">
+        <description>Set radius: 1</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then Radius value is {1} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="67">
+        <description>Check that radius value equals actual value: 1</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {setValue=19999, actualValue=19999}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1942">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And change value of ZipCode {90015} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="810">
+        <description>Set zip code value: 90015</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Radius {19999} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="216">
+        <description>Set radius: 19999</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then Radius value is {19999} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="91">
+        <description>Check that radius value equals actual value: 19999</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[4] {setValue=20000, actualValue=19999}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2217">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And change value of ZipCode {90015} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="712">
+        <description>Set zip code value: 90015</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Radius {20000} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="144">
+        <description>Set radius: 20000</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then Radius value is {19999} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="70">
+        <description>Check that radius value equals actual value: 19999</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

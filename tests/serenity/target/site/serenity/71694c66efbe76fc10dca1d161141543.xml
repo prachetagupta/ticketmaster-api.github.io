@@ -1,0 +1,32 @@
+<acceptance-test-run title="(feedback widget) Feedback widget Close button" name="(feedback widget) Feedback widget Close button" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3816" timestamp="2017-01-19T11:25:35.769Z" session-id="c72531d5-218b-4ec5-809b-f07f48ae8ab6">
+  <user-story id="FeedbackWidget" name="Feedback widget" path="stories/site/widgets/FeedbackWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Feedback widget" type="story"/>
+    <tag name="Widgets/Feedback widget" type="story"/>
+  </tags>
+  <test-group name="Given open Tutorials Widgets page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2598">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click Feedback button of Tutorials Widgets page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="110">
+      <description>Click feedback button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then click close button of Feedback widget" result="SUCCESS">
+    <test-step result="SUCCESS" duration="506">
+      <description>Click close feedback widget button</description>
+    </test-step>
+  </test-group>
+  <test-group name="And Feedback widget is not shown" result="SUCCESS">
+    <test-step result="SUCCESS" duration="536">
+      <description>Check if widget is not shown</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="35">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

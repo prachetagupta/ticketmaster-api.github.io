@@ -1,0 +1,38 @@
+<acceptance-test-run title="(developer-acct.ticketmaster.com/user/password) Verification for general page&apos;s elements" name="(developer-acct.ticketmaster.com/user/password) Verification for general page&apos;s elements" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="25397" timestamp="2017-01-19T11:30:52.394Z" session-id="a84dfe73-35b3-4318-b4b6-9ddba0ce70fb">
+  <user-story id="RequestNewPassword" name="Request new password" path="stories/site/pantheon/RequestNewPassword.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Pantheon" type="feature"/>
+    <tag name="Pantheon/Request new password" type="story"/>
+    <tag name="Request new password" type="story"/>
+  </tags>
+  <test-group name="Given open Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3153">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon LogIn page from Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="889">
+      <description>Click log in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="146">
+      <description>Is page opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon Request New Password page from LogIn page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="800">
+      <description>Click forgot your password link</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Pantheon Request New Password page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="140">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20233">
+      <description>Check general page elements</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="18">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

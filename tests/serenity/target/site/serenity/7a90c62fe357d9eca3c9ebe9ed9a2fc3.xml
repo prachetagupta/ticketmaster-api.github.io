@@ -1,0 +1,290 @@
+<acceptance-test-run title="(/Home Page/) Verification for all the page links" name="(/Home Page/) Verification for all the page links" steps="36" successful="35" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="75998" timestamp="2017-01-19T11:13:01.044Z" session-id="a49dc120-4b5f-4463-bc4f-a14340737438">
+  <user-story id="Home" name="Home" path="stories/site/Home.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Home" type="story"/>
+    <tag name="Site/Home" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>elementKey</header>
+      <header>pageURL</header>
+      <header>elementLocation</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Get Your API Key</value>
+        <value>https://developer-acct.ticketmaster.com/user/login</value>
+        <value>//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Review Documentation</value>
+        <value>{url}/products-and-docs/apis/getting-started/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Explore The API</value>
+        <value>{url}/api-explorer/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Android</value>
+        <value>http://code.ticketmaster.com/#android-projects</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Backend</value>
+        <value>http://code.ticketmaster.com/#backend-projects</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>iOS</value>
+        <value>http://code.ticketmaster.com/#iOS-projects</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Web</value>
+        <value>http://code.ticketmaster.com/#web-projects</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Tech blog</value>
+        <value>https://tech.ticketmaster.com/</value>
+        <value>//h1[@class=&apos;site-title&apos;]/a</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Medium Publication</value>
+        <value>https://medium.com/ticketmaster-tech</value>
+        <value>//h2[text()=&apos;Because Engineers are Fans Too!&apos;]</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Partner API</value>
+        <value>{url}/products-and-docs/apis/partner/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Deals API</value>
+        <value>{url}/products-and-docs/apis/deals-api/</value>
+        <value>//h1</value>
+      </row>
+      <row result="FAILURE">
+        <value>Legacy docs</value>
+        <value>http://apidocs.ticketmaster.com/</value>
+        <value>//td[@class=&apos;WikiLogoName&apos;]/a</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {elementKey=Get Your API Key, pageURL=https://developer-acct.ticketmaster.com/user/login, elementLocation=//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1048">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Get Your API Key} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1000">
+        <description>Validate and click element: Get Your API Key</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {https://developer-acct.ticketmaster.com/user/login} and {//div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;]}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="120">
+        <description>Check if page is opened: https://developer-acct.ticketmaster.com/user/login, //div[@class=&apos;text-wrapper col-lg-6 col-sm-12 col-xs-12&apos;]/h1[@class=&apos;only-desktop&apos;], http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {elementKey=Review Documentation, pageURL={url}/products-and-docs/apis/getting-started/, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1160">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Review Documentation} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1142">
+        <description>Validate and click element: Review Documentation</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {{url}/products-and-docs/apis/getting-started/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="951">
+        <description>Check if page is opened: {url}/products-and-docs/apis/getting-started/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {elementKey=Explore The API, pageURL={url}/api-explorer/, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2007">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Explore The API} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1821">
+        <description>Validate and click element: Explore The API</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {{url}/api-explorer/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="384">
+        <description>Check if page is opened: {url}/api-explorer/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[4] {elementKey=Android, pageURL=http://code.ticketmaster.com/#android-projects, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1386">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Android} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="224">
+        <description>Validate and click element: Android</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {http://code.ticketmaster.com/#android-projects} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="731">
+        <description>Check if page is opened: http://code.ticketmaster.com/#android-projects, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[5] {elementKey=Backend, pageURL=http://code.ticketmaster.com/#backend-projects, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1071">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Backend} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="346">
+        <description>Validate and click element: Backend</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {http://code.ticketmaster.com/#backend-projects} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="179">
+        <description>Check if page is opened: http://code.ticketmaster.com/#backend-projects, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[6] {elementKey=iOS, pageURL=http://code.ticketmaster.com/#iOS-projects, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1602">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {iOS} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="425">
+        <description>Validate and click element: iOS</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {http://code.ticketmaster.com/#iOS-projects} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="23">
+        <description>Check if page is opened: http://code.ticketmaster.com/#iOS-projects, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[7] {elementKey=Web, pageURL=http://code.ticketmaster.com/#web-projects, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2556">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Web} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="264">
+        <description>Validate and click element: Web</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {http://code.ticketmaster.com/#web-projects} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="22">
+        <description>Check if page is opened: http://code.ticketmaster.com/#web-projects, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[8] {elementKey=Tech blog, pageURL=https://tech.ticketmaster.com/, elementLocation=//h1[@class=&apos;site-title&apos;]/a}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1713">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Tech blog} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="3149">
+        <description>Validate and click element: Tech blog</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {https://tech.ticketmaster.com/} and {//h1[@class=&apos;site-title&apos;]/a}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="235">
+        <description>Check if page is opened: https://tech.ticketmaster.com/, //h1[@class=&apos;site-title&apos;]/a, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[9] {elementKey=Medium Publication, pageURL=https://medium.com/ticketmaster-tech, elementLocation=//h2[text()=&apos;Because Engineers are Fans Too!&apos;]}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2138">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Medium Publication} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1960">
+        <description>Validate and click element: Medium Publication</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {https://medium.com/ticketmaster-tech} and {//h2[text()=&apos;Because Engineers are Fans Too!&apos;]}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="85">
+        <description>Check if page is opened: https://medium.com/ticketmaster-tech, //h2[text()=&apos;Because Engineers are Fans Too!&apos;], http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[10] {elementKey=Partner API, pageURL={url}/products-and-docs/apis/partner/, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1651">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Partner API} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="223">
+        <description>Validate and click element: Partner API</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {{url}/products-and-docs/apis/partner/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="3804">
+        <description>Check if page is opened: {url}/products-and-docs/apis/partner/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[11] {elementKey=Deals API, pageURL={url}/products-and-docs/apis/deals-api/, elementLocation=//h1}" result="SUCCESS">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2091">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Deals API} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="338">
+        <description>Validate and click element: Deals API</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has {{url}/products-and-docs/apis/deals-api/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1811">
+        <description>Check if page is opened: {url}/products-and-docs/apis/deals-api/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[12] {elementKey=Legacy docs, pageURL=http://apidocs.ticketmaster.com/, elementLocation=//td[@class=&apos;WikiLogoName&apos;]/a}" result="FAILURE">
+    <test-group name="Given open Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1583">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Legacy docs} element of Home page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="328">
+        <description>Validate and click element: Legacy docs</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Home page has ｟http://apidocs.ticketmaster.com/｠ and ｟//td[@class=&apos;WikiLogoName&apos;]/a｠" result="FAILURE">
+      <test-step result="FAILURE" duration="36228">
+        <screenshots>
+          <screenshot image="37208524142bce09db2b40a1389462c8.png" source="pagesource5266710252064462443.html.txt"/>
+        </screenshots>
+        <description>Check if page is opened: http://apidocs.ticketmaster.com/, //td[@class=&apos;WikiLogoName&apos;]/a, http://127.0.0.1:4000</description>
+        <error>java.lang.AssertionError: Element should be visible</error>
+        <exception>java.lang.AssertionError:Element should be visible
+[bla.tm.pages.AnyPage.keyPageElementIsVisible(AnyPage.java:8), bla.tm.steps.AnyPageSteps.checkIfPageIsOpened(AnyPageSteps.java:24), bla.tm.definitions.site.HomePageDefinition.checkIfPageIsOpened(HomePageDefinition.java:44)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

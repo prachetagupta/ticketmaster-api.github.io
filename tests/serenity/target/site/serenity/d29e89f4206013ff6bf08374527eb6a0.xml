@@ -1,0 +1,25 @@
+<acceptance-test-run title="(summary widget) TKMDPA-870 Summary widget check for Getting Started page" name="(summary widget) TKMDPA-870 Summary widget check for Getting Started page" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5565" timestamp="2017-01-19T11:23:59.118Z" session-id="1fb6b283-c75d-45da-99a9-8cbb56ad406a">
+  <user-story id="SummaryWidget" name="Summary widget" path="stories/site/widgets/SummaryWidget.story"/>
+  <issues>
+    <issue>TKMDPA-870</issue>
+  </issues>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Summary widget" type="story"/>
+    <tag name="Widgets/Summary widget" type="story"/>
+  </tags>
+  <test-group name="Given open Getting Started page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5064">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Summary widget is shown for Getting Started page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="170">
+      <description>Check summary widget visible</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="315">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

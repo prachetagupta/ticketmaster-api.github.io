@@ -1,0 +1,19 @@
+{
+  "testId" : "2-home-page-on-tablet",
+  "name" : "Home page on tablet",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://127.0.0.1:4000/ 784x1024",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases",
+        "status" : "error",
+        "time" : 1484825623505,
+        "stacktrace" : "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:199)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109)\n\tat org.openqa.selenium.firefox.GeckoDriverService.access$000(GeckoDriverService.java:37)\n\tat org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:95)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)\n\tat org.openqa.selenium.firefox.FirefoxDriver.createCommandExecutor(FirefoxDriver.java:277)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242)\n\tat org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:135)\n\tat com.galenframework.browser.SeleniumBrowserFactory.getDriver(SeleniumBrowserFactory.java:95)\n\tat com.galenframework.browser.SeleniumBrowserFactory.createLocalBrowser(SeleniumBrowserFactory.java:89)\n\tat com.galenframework.browser.SeleniumBrowserFactory.openBrowser(SeleniumBrowserFactory.java:65)\n\tat com.galenframework.runner.GalenBasicTestRunner.runTest(GalenBasicTestRunner.java:73)\n\tat com.galenframework.tests.GalenBasicTest.execute(GalenBasicTest.java:55)\n\tat com.galenframework.TestRunnable.runTest(TestRunnable.java:75)\n\tat com.galenframework.TestRunnable.run(TestRunnable.java:101)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n",
+        "type" : "node"
+      } ],
+      "time" : 1484825623498,
+      "type" : "node"
+    } ]
+  }
+}

@@ -1,0 +1,85 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/CalendarWidget.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> setup Calendar Widget</div>
+<div class="element asA"><span class="keyword asA">As a</span> developer</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that required fields are not empty</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">Then the required fields are not empty on the Calendar Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that embed code functionality works properly</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Calendar Widget page</div>
+<div class="step">When change value of Zip Code &lt;zipCode&gt;</div>
+<div class="step">Then the Country field contains appropriate value &lt;countryName&gt;</div>
+<table>
+<thead>
+<tr>
+<th>zipCode</th><th>countryName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>01000</td><td>France</td></tr>
+<tr>
+<td>K1P 1J1</td><td>Canada</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {zipCode=01000, countryName=France}</h3>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">When change value of Zip Code <span class="step parameter">01000</span></div>
+<div class="step successful">Then the Country field contains appropriate value <span class="step parameter">France</span></div>
+
+<h3 class="example">Example: {zipCode=K1P 1J1, countryName=Canada}</h3>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">When change value of Zip Code <span class="step parameter">K1P 1J1</span></div>
+<div class="step successful">Then the Country field contains appropriate value <span class="step parameter">Canada</span></div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">When click reset button</div>
+<div class="step successful">Then values of fields: <span class="step parameter">apiKey,keyword,zipCode,radius</span> equals stored values</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">And store values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">And change values for: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+<div class="step successful">When click reset button on Calendar Widget Page</div>
+<div class="step successful">And click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored values of: <span class="step parameter">apiKey,keyword,zipCode,radius</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">When I click on the 'Get your own' link to get api key</div>
+<div class="step successful">Then The page is opened with url <span class="step parameter">https://developer-acct.ticketmaster.com</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/calendar/) Event message - Check event message for invalid API Key</h2>
+<div class="step successful">Given open Calendar Widget page</div>
+<div class="step successful">And enter custom ApiKey <span class="step parameter">invalidApiKey123</span></div>
+<div class="step successful">Then the event message is shown &quot;No results were found&quot;</div>
+</div>
+</div>

@@ -1,0 +1,42 @@
+<acceptance-test-run title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Full-width mode" name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Full-width mode" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6649" timestamp="2017-01-19T11:27:20.705Z" session-id="19664bf8-ecae-4872-ba62-3609d47a3c2b">
+  <user-story id="CountdownWidget" name="Countdown widget" path="stories/site/widgets/CountdownWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Countdown widget" type="story"/>
+    <tag name="Widgets/Countdown widget" type="story"/>
+  </tags>
+  <test-group name="Given open Countdown Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1259">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1230">
+      <description>Switch to tab: visual</description>
+    </test-step>
+  </test-group>
+  <test-group name="And set theme to full-width" result="SUCCESS">
+    <test-step result="SUCCESS" duration="422">
+      <description>Set full width</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1200">
+      <description>Click on get button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2369">
+      <description>Check that popup embedded code is opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="And embedded html code contains stored theme" result="SUCCESS">
+    <test-step result="SUCCESS" duration="127">
+      <description>Check that embedded code contains stored theme</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="17">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

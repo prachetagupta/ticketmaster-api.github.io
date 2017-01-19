@@ -1,0 +1,87 @@
+<acceptance-test-run title="(products-and-docs/sdks/) Verification for all the page&apos;s links" name="(products-and-docs/sdks/) Verification for all the page&apos;s links" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12086" timestamp="2017-01-19T11:24:41.499Z" session-id="002d3c8d-65b9-4efe-a239-78d660fd4521">
+  <user-story id="PD_SDKs" name="Pd sd ks" path="stories/site/products_and_docs/PD_SDKs.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd sd ks" type="story"/>
+    <tag name="Products and docs/Pd sd ks" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>elementKey</header>
+      <header>pageURL</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>SDK-Java Image</value>
+        <value>https://github.com/ticketmaster-api/sdk-java</value>
+        <value>//h1[@class=&apos;public &apos;]/strong/a</value>
+      </row>
+      <row result="SUCCESS">
+        <value>SDK-JavaScript Image</value>
+        <value>https://github.com/ticketmaster-api/sdk-javascript</value>
+        <value>//h1[@class=&apos;public &apos;]/strong/a</value>
+      </row>
+      <row result="SUCCESS">
+        <value>SDK-Scala Image</value>
+        <value>https://github.com/ticketmaster-api/sdk-scala</value>
+        <value>//h1[@class=&apos;public &apos;]/strong/a</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {elementKey=SDK-Java Image, pageURL=https://github.com/ticketmaster-api/sdk-java, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+    <test-group name="Given open SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1668">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {SDK-Java Image} element of SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="945">
+        <description>Validate and click element: SDK-Java Image</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from SDKs page has {https://github.com/ticketmaster-api/sdk-java} and {//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1090">
+        <description>Check if page is opened: https://github.com/ticketmaster-api/sdk-java, //h1[@class=&apos;public &apos;]/strong/a, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {elementKey=SDK-JavaScript Image, pageURL=https://github.com/ticketmaster-api/sdk-javascript, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+    <test-group name="Given open SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2111">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {SDK-JavaScript Image} element of SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1182">
+        <description>Validate and click element: SDK-JavaScript Image</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from SDKs page has {https://github.com/ticketmaster-api/sdk-javascript} and {//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1000">
+        <description>Check if page is opened: https://github.com/ticketmaster-api/sdk-javascript, //h1[@class=&apos;public &apos;]/strong/a, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {elementKey=SDK-Scala Image, pageURL=https://github.com/ticketmaster-api/sdk-scala, pageTitle=//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+    <test-group name="Given open SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2119">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {SDK-Scala Image} element of SDKs page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1130">
+        <description>Validate and click element: SDK-Scala Image</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from SDKs page has {https://github.com/ticketmaster-api/sdk-scala} and {//h1[@class=&apos;public &apos;]/strong/a}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="810">
+        <description>Check if page is opened: https://github.com/ticketmaster-api/sdk-scala, //h1[@class=&apos;public &apos;]/strong/a, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

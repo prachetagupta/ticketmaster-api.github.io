@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/apis/publish/) Verification for general page&apos;s elements" name="(/products-and-docs/apis/publish/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5030" timestamp="2017-01-19T11:25:20.853Z" session-id="3e8b5659-5e9a-4f90-b4c4-4beb76e8e20d">
+  <user-story id="PD_PublishAPI" name="Pd  publish API" path="stories/site/products_and_docs/PD_PublishAPI.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  publish API" type="story"/>
+    <tag name="Products and docs/Pd publish api" type="story"/>
+  </tags>
+  <test-group name="Given open Publish API page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4275">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Publish API Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="265">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="433">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="34">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,62 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10137" timestamp="2017-01-19T11:28:43.607Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>zipCode</header>
+      <header>countryName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>NW1</value>
+        <value>United Kingdom</value>
+      </row>
+      <row result="SUCCESS">
+        <value>40104</value>
+        <value>United States</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {zipCode=NW1, countryName=United Kingdom}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2498">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When change value of ZipCode {NW1} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="783">
+        <description>Set zip code value: NW1</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the Country Field contains appropriate value {United Kingdom} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1550">
+        <description>Field country contains: United Kingdom</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {zipCode=40104, countryName=United States}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2965">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When change value of ZipCode {40104} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="783">
+        <description>Set zip code value: 40104</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the Country Field contains appropriate value {United States} on Event Discovery Widget Page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1541">
+        <description>Field country contains: United States</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

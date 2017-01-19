@@ -1,0 +1,59 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that KEYWORD field functionality works properly" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that KEYWORD field functionality works properly" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11998" timestamp="2017-01-19T11:28:53.749Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>keyword</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>ADELE</value>
+      </row>
+      <row result="SUCCESS">
+        <value>STING</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {keyword=ADELE}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2180">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When search events by keyword {ADELE} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="358">
+        <description>Search events by keyword: ADELE</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then found events contains {ADELE} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="3843">
+        <description>Check that found events contains text: ADELE</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {keyword=STING}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2760">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When search events by keyword {STING} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="483">
+        <description>Search events by keyword: STING</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then found events contains {STING} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2355">
+        <description>Check that found events contains text: STING</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

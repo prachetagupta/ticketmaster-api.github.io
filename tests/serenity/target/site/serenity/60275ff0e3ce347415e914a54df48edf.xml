@@ -1,0 +1,27 @@
+<acceptance-test-run title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links" name="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3602" timestamp="2017-01-19T11:20:00.368Z" session-id="d1700774-dded-4930-a313-a96950a3a8ff">
+  <user-story id="CalendarWidget" name="Calendar widget" path="stories/site/widgets/CalendarWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Calendar widget" type="story"/>
+    <tag name="Widgets/Calendar widget" type="story"/>
+  </tags>
+  <test-group name="Given open Calendar Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2100">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I click on the &apos;Get your own&apos; link to get api key" result="SUCCESS">
+    <test-step result="SUCCESS" duration="294">
+      <description>Get your own api key link</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then The page is opened with url {https://developer-acct.ticketmaster.com}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1047">
+      <description>Check that page is opened with url: https://developer-acct.ticketmaster.com</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="132">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

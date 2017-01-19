@@ -1,0 +1,17 @@
+<story path="stories/site/products_and_docs/PD_GettingStarted.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test engineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test Getting Started Page of Ticket Master Developer&apos;s site</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/apis/getting-started/) TKMDPA-874 Commerce API links in Available Resources table">
+<step outcome="successful">Given open Commerce API page</step>
+<step outcome="successful">When Commerce API menu has list of methods</step>
+<step outcome="successful">And open Getting Started page</step>
+<step outcome="successful">Then all the Commerce API methods are shown on Getting Started page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/apis/getting-started/) Verification for general page&apos;s elements">
+<step outcome="successful">Given open Getting Started page</step>
+<step outcome="successful">Then check general page elements for Getting Started Page, where DISQUS = <parameter>true</parameter> and LeftMenu = <parameter>true</parameter></step>
+</scenario>
+</story>

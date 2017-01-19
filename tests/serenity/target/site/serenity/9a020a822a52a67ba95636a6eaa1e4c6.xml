@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/support/faq/) Verification for general page&apos;s elements" name="(/support/faq/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3400" timestamp="2017-01-19T11:24:34.238Z" session-id="85e13a25-8514-41cd-ba5f-f2b3d587d2e1">
+  <user-story id="Support_FAQ" name="Support faq" path="stories/site/support/Support_FAQ.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Support" type="feature"/>
+    <tag name="Support faq" type="story"/>
+    <tag name="Support/Support faq" type="story"/>
+  </tags>
+  <test-group name="Given open FAQ page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2796">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for FAQ Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="186">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="348">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="56">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

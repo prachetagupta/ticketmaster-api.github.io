@@ -1,0 +1,104 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of EVENT COUNT" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of EVENT COUNT" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19651" timestamp="2017-01-19T11:29:17.982Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>value</header>
+      <header>actualValue</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>0</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>1</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>100</value>
+        <value>100</value>
+      </row>
+      <row result="SUCCESS">
+        <value>101</value>
+        <value>100</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {value=0, actualValue=1}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2720">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Event Count {0} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2488">
+        <description>Set event count value: 0</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the number of events equals Event Count {1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="74">
+        <description>Check that number of events equals value: 1</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {value=1, actualValue=1}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2269">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Event Count {1} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2549">
+        <description>Set event count value: 1</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the number of events equals Event Count {1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="78">
+        <description>Check that number of events equals value: 1</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {value=100, actualValue=100}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2023">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Event Count {100} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2265">
+        <description>Set event count value: 100</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the number of events equals Event Count {100}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="113">
+        <description>Check that number of events equals value: 100</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[4] {value=101, actualValue=100}" result="SUCCESS">
+    <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2577">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When set Event Count {101} on Event Discovery Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2377">
+        <description>Set event count value: 101</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the number of events equals Event Count {100}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="83">
+        <description>Check that number of events equals value: 100</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

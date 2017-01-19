@@ -1,0 +1,329 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/EventDiscoveryWidget.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> setup Event Discovery Widget</div>
+<div class="element asA"><span class="keyword asA">As a</span> user of Ticketmaster Developer Portal</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that required fields are not empty and have default values</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">Then the required fields are not empty and have default values on the Event Discovery Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that embed code functionality works properly</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And change values for all possible fields on the Event Discovery Widget page</div>
+<div class="step successful">And store all fields values on the Event Discovery Widget page</div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored values on the Event Discovery Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">When change value of ZipCode &lt;zipCode&gt; on Event Discovery Widget Page</div>
+<div class="step">Then the Country Field contains appropriate value &lt;countryName&gt; on Event Discovery Widget Page</div>
+<table>
+<thead>
+<tr>
+<th>zipCode</th><th>countryName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>NW1</td><td>United Kingdom</td></tr>
+<tr>
+<td>40104</td><td>United States</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {zipCode=NW1, countryName=United Kingdom}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When change value of ZipCode <span class="step parameter">NW1</span> on Event Discovery Widget Page</div>
+<div class="step successful">Then the Country Field contains appropriate value <span class="step parameter">United Kingdom</span> on Event Discovery Widget Page</div>
+
+<h3 class="example">Example: {zipCode=40104, countryName=United States}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When change value of ZipCode <span class="step parameter">40104</span> on Event Discovery Widget Page</div>
+<div class="step successful">Then the Country Field contains appropriate value <span class="step parameter">United States</span> on Event Discovery Widget Page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that KEYWORD field functionality works properly</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">When search events by keyword &lt;keyword&gt; on Event Discovery Widget page</div>
+<div class="step">Then found events contains &lt;keyword&gt; on Event Discovery Widget page</div>
+<table>
+<thead>
+<tr>
+<th>keyword</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>ADELE</td></tr>
+<tr>
+<td>STING</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {keyword=ADELE}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When search events by keyword <span class="step parameter">ADELE</span> on Event Discovery Widget page</div>
+<div class="step successful">Then found events contains <span class="step parameter">ADELE</span> on Event Discovery Widget page</div>
+
+<h3 class="example">Example: {keyword=STING}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When search events by keyword <span class="step parameter">STING</span> on Event Discovery Widget page</div>
+<div class="step successful">Then found events contains <span class="step parameter">STING</span> on Event Discovery Widget page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that EVENT COUNT works properly</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">When set Event Count &lt;value&gt; on Event Discovery Widget page</div>
+<div class="step">Then the number of events equals or less than Event Count &lt;value&gt;</div>
+<table>
+<thead>
+<tr>
+<th>value</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td></tr>
+<tr>
+<td>100</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {value=1}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">1</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals or less than Event Count <span class="step parameter">1</span></div>
+
+<h3 class="example">Example: {value=100}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">100</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals or less than Event Count <span class="step parameter">100</span></div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of EVENT COUNT</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">When set Event Count &lt;value&gt; on Event Discovery Widget page</div>
+<div class="step">Then the number of events equals Event Count &lt;actualValue&gt;</div>
+<table>
+<thead>
+<tr>
+<th>value</th><th>actualValue</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td><td>1</td></tr>
+<tr>
+<td>1</td><td>1</td></tr>
+<tr>
+<td>100</td><td>100</td></tr>
+<tr>
+<td>101</td><td>100</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {value=0, actualValue=1}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">0</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals Event Count <span class="step parameter">1</span></div>
+
+<h3 class="example">Example: {value=1, actualValue=1}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">1</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals Event Count <span class="step parameter">1</span></div>
+
+<h3 class="example">Example: {value=100, actualValue=100}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">100</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals Event Count <span class="step parameter">100</span></div>
+
+<h3 class="example">Example: {value=101, actualValue=100}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When set Event Count <span class="step parameter">101</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the number of events equals Event Count <span class="step parameter">100</span></div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of RADIUS</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">And change value of ZipCode 90015 on Event Discovery Widget Page</div>
+<div class="step">When set Radius &lt;setValue&gt; on Event Discovery Widget page</div>
+<div class="step">Then Radius value is &lt;actualValue&gt; on Event Discovery Widget page</div>
+<table>
+<thead>
+<tr>
+<th>setValue</th><th>actualValue</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td><td>1</td></tr>
+<tr>
+<td>1</td><td>1</td></tr>
+<tr>
+<td>19999</td><td>19999</td></tr>
+<tr>
+<td>20000</td><td>19999</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {setValue=0, actualValue=1}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And change value of ZipCode <span class="step parameter">90015</span> on Event Discovery Widget Page</div>
+<div class="step successful">When set Radius <span class="step parameter">0</span> on Event Discovery Widget page</div>
+<div class="step successful">Then Radius value is <span class="step parameter">1</span> on Event Discovery Widget page</div>
+
+<h3 class="example">Example: {setValue=1, actualValue=1}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And change value of ZipCode <span class="step parameter">90015</span> on Event Discovery Widget Page</div>
+<div class="step successful">When set Radius <span class="step parameter">1</span> on Event Discovery Widget page</div>
+<div class="step successful">Then Radius value is <span class="step parameter">1</span> on Event Discovery Widget page</div>
+
+<h3 class="example">Example: {setValue=19999, actualValue=19999}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And change value of ZipCode <span class="step parameter">90015</span> on Event Discovery Widget Page</div>
+<div class="step successful">When set Radius <span class="step parameter">19999</span> on Event Discovery Widget page</div>
+<div class="step successful">Then Radius value is <span class="step parameter">19999</span> on Event Discovery Widget page</div>
+
+<h3 class="example">Example: {setValue=20000, actualValue=19999}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And change value of ZipCode <span class="step parameter">90015</span> on Event Discovery Widget Page</div>
+<div class="step successful">When set Radius <span class="step parameter">20000</span> on Event Discovery Widget page</div>
+<div class="step successful">Then Radius value is <span class="step parameter">19999</span> on Event Discovery Widget page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that RESET button works properly</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And store all fields values on the Event Discovery Widget page</div>
+<div class="step successful">And change values for all possible fields on the Event Discovery Widget page</div>
+<div class="step successful">When click reset button</div>
+<div class="step successful">Then all fields have been reseted to defaults on the Event Discovery Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check links</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When I click on the 'Get your own' link to get api key</div>
+<div class="step successful">Then The page is opened with url <span class="step parameter">https://developer-acct.ticketmaster.com</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) VISUAL TAB - Check Layout Resolutions</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">And switch to VISUAL Tab</div>
+<div class="step">And set theme to poster</div>
+<div class="step">And set layout resolution to &lt;layoutResolution&gt;</div>
+<div class="step">When click on &quot;Get code&quot; button</div>
+<div class="step">Then the pop-up Embedded Code is opened</div>
+<div class="step">And embedded html code contains stored layout resolution</div>
+<table>
+<thead>
+<tr>
+<th>layoutResolution</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>300x600</td></tr>
+<tr>
+<td>300x250</td></tr>
+<tr>
+<td>custom</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {layoutResolution=300x600}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And switch to VISUAL Tab</div>
+<div class="step successful">And set theme to poster</div>
+<div class="step successful">And set layout resolution to <span class="step parameter">300x600</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored layout resolution</div>
+
+<h3 class="example">Example: {layoutResolution=300x250}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And switch to VISUAL Tab</div>
+<div class="step successful">And set theme to poster</div>
+<div class="step successful">And set layout resolution to <span class="step parameter">300x250</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored layout resolution</div>
+
+<h3 class="example">Example: {layoutResolution=custom}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And switch to VISUAL Tab</div>
+<div class="step successful">And set theme to poster</div>
+<div class="step successful">And set layout resolution to <span class="step parameter">custom</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored layout resolution</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) VISUAL TAB - Check Layout Orientations</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given open Event Discovery Widget page</div>
+<div class="step">And switch to VISUAL Tab</div>
+<div class="step">And set theme to poster</div>
+<div class="step">And set layout orientation to &lt;orientation&gt;</div>
+<div class="step">When click on &quot;Get code&quot; button</div>
+<div class="step">Then the pop-up Embedded Code is opened</div>
+<div class="step">And embedded html code contains stored layout orientation</div>
+<table>
+<thead>
+<tr>
+<th>orientation</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>horizontal</td></tr>
+<tr>
+<td>vertical</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {orientation=horizontal}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And switch to VISUAL Tab</div>
+<div class="step successful">And set theme to poster</div>
+<div class="step successful">And set layout orientation to <span class="step parameter">horizontal</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored layout orientation</div>
+
+<h3 class="example">Example: {orientation=vertical}</h3>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">And switch to VISUAL Tab</div>
+<div class="step successful">And set theme to poster</div>
+<div class="step successful">And set layout orientation to <span class="step parameter">vertical</span></div>
+<div class="step successful">When click on &quot;Get code&quot; button</div>
+<div class="step successful">Then the pop-up Embedded Code is opened</div>
+<div class="step successful">And embedded html code contains stored layout orientation</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (/products-and-docs/widgets/event-discovery/) Event message - Check event message for invalid Keyword</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When search events by keyword <span class="step parameter">ABRAKADABRA</span> on Event Discovery Widget page</div>
+<div class="step successful">Then the event message is shown &quot;Here other options for you.&quot;</div>
+</div>
+</div>

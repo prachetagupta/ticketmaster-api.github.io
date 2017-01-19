@@ -1,0 +1,64 @@
+<acceptance-test-run title="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality" name="(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9100" timestamp="2017-01-19T11:19:39.646Z" session-id="d1700774-dded-4930-a313-a96950a3a8ff">
+  <user-story id="CalendarWidget" name="Calendar widget" path="stories/site/widgets/CalendarWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Calendar widget" type="story"/>
+    <tag name="Widgets/Calendar widget" type="story"/>
+  </tags>
+  <test-group name="Given open Calendar Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2745">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And store values of: {apiKey,keyword,zipCode,radius}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="86">
+      <description>Store value: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="151">
+      <description>Store value: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="72">
+      <description>Store value: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="37">
+      <description>Store value: radius</description>
+    </test-step>
+  </test-group>
+  <test-group name="And change values for: {apiKey,keyword,zipCode,radius}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="308">
+      <description>Set random value for: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="490">
+      <description>Set random value for: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1777">
+      <description>Set random value for: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1129">
+      <description>Set random value for: radius</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click reset button" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1943">
+      <description>Reset form</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then values of fields: {apiKey,keyword,zipCode,radius} equals stored values" result="SUCCESS">
+    <test-step result="SUCCESS" duration="46">
+      <description>Field equals stored value: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="69">
+      <description>Field equals stored value: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="68">
+      <description>Field equals stored value: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="92">
+      <description>Field equals stored value: radius</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="46">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

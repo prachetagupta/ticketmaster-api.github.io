@@ -1,0 +1,38 @@
+<acceptance-test-run title="(developer-acct.ticketmaster.com/user/1554/apps) Verification for general page&apos;s elements [Login - Password field - enter valid password]" name="(developer-acct.ticketmaster.com/user/1554/apps) Verification for general page&apos;s elements [Login - Password field - enter valid password]" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="27653" timestamp="2017-01-19T11:31:17.865Z" session-id="4b89cc44-1bd6-4620-93af-6538fd38d9a5">
+  <user-story id="UserAccount" name="User account" path="stories/site/pantheon/UserAccount.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Pantheon" type="feature"/>
+    <tag name="Pantheon/User account" type="story"/>
+    <tag name="User account" type="story"/>
+  </tags>
+  <test-group name="Given open Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2315">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon LogIn page from Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="884">
+      <description>Click log in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="219">
+      <description>Is page opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon User Account page from LogIn page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3789">
+      <description>Log in to account</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Pantheon User Account page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="167">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20234">
+      <description>Check general page elements</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="26">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

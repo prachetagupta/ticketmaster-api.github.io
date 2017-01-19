@@ -1,0 +1,219 @@
+<acceptance-test-run title="(/products-and-docs/tutorials/) Verification for all the page&apos;s links" name="(/products-and-docs/tutorials/) Verification for all the page&apos;s links" steps="27" successful="27" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="35293" timestamp="2017-01-19T11:25:57.161Z" session-id="cbca65af-b277-47f2-af28-e39c00e92424">
+  <user-story id="PD_Tutorials" name="Pd  tutorials" path="stories/site/products_and_docs/PD_Tutorials.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  tutorials" type="story"/>
+    <tag name="Products and docs/Pd tutorials" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>elementKey</header>
+      <header>pageURL</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Button</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Header Link</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Adding Event Discovery Widget Image Link</value>
+        <value>{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Locate Event On Map Widget Button</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Locate Event On Map Widget Header Link</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Locate Event On Map Widget Image Link</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_in_location.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Get Started WIth Discovery API Widget Button</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Get Started WIth Discovery API Widget Header Link</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Get Started WIth Discovery API Widget Image Link</value>
+        <value>{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html</value>
+        <value>//h1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {elementKey=Adding Event Discovery Widget Button, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1431">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Button} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="828">
+        <description>Validate and click element: Adding Event Discovery Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="717">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {elementKey=Adding Event Discovery Widget Header Link, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1076">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Header Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1787">
+        <description>Validate and click element: Adding Event Discovery Widget Header Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="685">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {elementKey=Adding Event Discovery Widget Image Link, pageURL={url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="697">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Adding Event Discovery Widget Image Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="753">
+        <description>Validate and click element: Adding Event Discovery Widget Image Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1668">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/widgets/Event_Discovery_Widget.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[4] {elementKey=Locate Event On Map Widget Button, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1106">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Locate Event On Map Widget Button} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="757">
+        <description>Validate and click element: Locate Event On Map Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_in_location.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="3117">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_in_location.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[5] {elementKey=Locate Event On Map Widget Header Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="941">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Locate Event On Map Widget Header Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2812">
+        <description>Validate and click element: Locate Event On Map Widget Header Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_in_location.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="142">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_in_location.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[6] {elementKey=Locate Event On Map Widget Image Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_in_location.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1778">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Locate Event On Map Widget Image Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2293">
+        <description>Validate and click element: Locate Event On Map Widget Image Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_in_location.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="569">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_in_location.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[7] {elementKey=Get Started WIth Discovery API Widget Button, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1761">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Get Started WIth Discovery API Widget Button} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="855">
+        <description>Validate and click element: Get Started WIth Discovery API Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2118">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[8] {elementKey=Get Started WIth Discovery API Widget Header Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="857">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Get Started WIth Discovery API Widget Header Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="751">
+        <description>Validate and click element: Get Started WIth Discovery API Widget Header Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1947">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[9] {elementKey=Get Started WIth Discovery API Widget Image Link, pageURL={url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="709">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Get Started WIth Discovery API Widget Image Link} element of Tutorials page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1995">
+        <description>Validate and click element: Get Started WIth Discovery API Widget Image Link</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Tutorials page has {{url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1063">
+        <description>Check if page is opened: {url}/products-and-docs/tutorials/events-search/search_events_with_discovery_api.html, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/support/terms-of-use/partner/) Verification for general page&apos;s elements" name="(/support/terms-of-use/partner/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3171" timestamp="2017-01-19T11:12:01.563Z" session-id="49427cfd-311f-4e28-a62d-3326b1d14811">
+  <user-story id="Support_PartnerAPITermsOfUse" name="Support  partner API terms of use" path="stories/site/support/Support_PartnerAPITermsOfUse.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Support" type="feature"/>
+    <tag name="Support  partner API terms of use" type="story"/>
+    <tag name="Support/Support partner api terms of use" type="story"/>
+  </tags>
+  <test-group name="Given open Partner API Terms Of Use page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2505">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Partner API Terms Of Use Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="253">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="318">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="46">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

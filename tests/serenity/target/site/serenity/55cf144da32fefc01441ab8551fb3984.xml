@@ -1,0 +1,133 @@
+<acceptance-test-run title="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Resolutions" name="(/products-and-docs/widgets/countdown/) VISUAL TAB - Check Layout Resolutions" steps="21" successful="21" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20796" timestamp="2017-01-19T11:27:27.358Z" session-id="19664bf8-ecae-4872-ba62-3609d47a3c2b">
+  <user-story id="CountdownWidget" name="Countdown widget" path="stories/site/widgets/CountdownWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Countdown widget" type="story"/>
+    <tag name="Widgets/Countdown widget" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>layoutResolution</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>300x600</value>
+      </row>
+      <row result="SUCCESS">
+        <value>300x250</value>
+      </row>
+      <row result="SUCCESS">
+        <value>custom</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {layoutResolution=300x600}" result="SUCCESS">
+    <test-group name="Given open Countdown Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1143">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+      <test-step result="SUCCESS" duration="861">
+        <description>Switch to tab: visual</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set theme to poster" result="SUCCESS">
+      <test-step result="SUCCESS" duration="378">
+        <description>Set poster theme</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="771">
+      <description>And set layout resolution to {300x600}</description>
+    </test-step>
+    <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="838">
+        <description>Click on get button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2367">
+        <description>Check that popup embedded code is opened</description>
+      </test-step>
+    </test-group>
+    <test-group name="And embedded html code contains stored layout resolution" result="SUCCESS">
+      <test-step result="SUCCESS" duration="317">
+        <description>Check that embedded code contains stored resolution</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {layoutResolution=300x250}" result="SUCCESS">
+    <test-group name="Given open Countdown Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1839">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+      <test-step result="SUCCESS" duration="868">
+        <description>Switch to tab: visual</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set theme to poster" result="SUCCESS">
+      <test-step result="SUCCESS" duration="423">
+        <description>Set poster theme</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="800">
+      <description>And set layout resolution to {300x250}</description>
+    </test-step>
+    <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="954">
+        <description>Click on get button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2381">
+        <description>Check that popup embedded code is opened</description>
+      </test-step>
+    </test-group>
+    <test-group name="And embedded html code contains stored layout resolution" result="SUCCESS">
+      <test-step result="SUCCESS" duration="265">
+        <description>Check that embedded code contains stored resolution</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {layoutResolution=custom}" result="SUCCESS">
+    <test-group name="Given open Countdown Widget page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1327">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And switch to VISUAL Tab" result="SUCCESS">
+      <test-step result="SUCCESS" duration="951">
+        <description>Switch to tab: visual</description>
+      </test-step>
+    </test-group>
+    <test-group name="And set theme to poster" result="SUCCESS">
+      <test-step result="SUCCESS" duration="468">
+        <description>Set poster theme</description>
+      </test-step>
+    </test-group>
+    <test-step result="SUCCESS" duration="709">
+      <description>And set layout resolution to {custom}</description>
+    </test-step>
+    <test-group name="When click on &quot;Get code&quot; button" result="SUCCESS">
+      <test-step result="SUCCESS" duration="736">
+        <description>Click on get button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2273">
+        <description>Check that popup embedded code is opened</description>
+      </test-step>
+    </test-group>
+    <test-group name="And embedded html code contains stored layout resolution" result="SUCCESS">
+      <test-step result="SUCCESS" duration="83">
+        <description>Check that embedded code contains stored resolution</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

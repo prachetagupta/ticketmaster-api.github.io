@@ -1,0 +1,32 @@
+<acceptance-test-run title="(feedback widget) Check that Feedback widget Elements are shown" name="(feedback widget) Check that Feedback widget Elements are shown" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5729" timestamp="2017-01-19T11:25:30.035Z" session-id="c72531d5-218b-4ec5-809b-f07f48ae8ab6">
+  <user-story id="FeedbackWidget" name="Feedback widget" path="stories/site/widgets/FeedbackWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Feedback widget" type="story"/>
+    <tag name="Widgets/Feedback widget" type="story"/>
+  </tags>
+  <test-group name="Given open Tutorials Widgets page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4134">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And Feedback widget is not shown" result="SUCCESS">
+    <test-step result="SUCCESS" duration="592">
+      <description>Check if widget is not shown</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click Feedback button of Tutorials Widgets page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="93">
+      <description>Click feedback button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then Feedback widget elements are shown" result="SUCCESS">
+    <test-step result="SUCCESS" duration="874">
+      <description>Check feedback elements are shown</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="23">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

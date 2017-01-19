@@ -1,0 +1,34 @@
+<story path="stories/site/widgets/FeedbackWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">send feedback</inOrderTo>
+  <asA keyword="As a">user of Ticketmaster Developer Portal</asA>
+  <iWantTo keyword="I want to">use the feedback widget
+and have ability to send feedback form to support</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(feedback widget) Check that Feedback widget Elements are shown">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">And Feedback widget is not shown</step>
+<step outcome="successful">When click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">Then Feedback widget elements are shown</step>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget Close button">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">When click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">Then click close button of Feedback widget</step>
+<step outcome="successful">And Feedback widget is not shown</step>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget error notifications for NAME field">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">And click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">When all fields except Name are populated</step>
+<step outcome="successful">And click send button of Feedback widget</step>
+<step outcome="successful">Then error notification is shown for Feedback widget</step>
+</scenario>
+<scenario keyword="Scenario:" title="(feedback widget) Feedback widget error notifications for Email field">
+<step outcome="successful">Given open Tutorials Widgets page</step>
+<step outcome="successful">And click Feedback button of Tutorials Widgets page</step>
+<step outcome="successful">When all fields except Email are populated</step>
+<step outcome="successful">And click send button of Feedback widget</step>
+<step outcome="successful">Then error notification is shown for Feedback widget</step>
+</scenario>
+</story>

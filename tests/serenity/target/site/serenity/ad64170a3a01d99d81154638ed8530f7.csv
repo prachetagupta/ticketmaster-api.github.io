@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Calendar widget","(/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window","SUCCESS","2017-01-19T11:19:48.755Z","0.0","11.61"
+"Calendar widget","(/products-and-docs/widgets/calendar/) Event message - Check event message for invalid API Key","SUCCESS","2017-01-19T11:20:03.981Z","0.0","4.29"
+"Calendar widget","(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check RESET button functionality","SUCCESS","2017-01-19T11:19:39.646Z","0.0","9.1"
+"Calendar widget","(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check links","SUCCESS","2017-01-19T11:20:00.368Z","0.0","3.6"
+"Calendar widget","(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code","SUCCESS","2017-01-19T11:19:31.118Z","0.0","8.52"
+"Calendar widget","(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that embed code functionality works properly","SUCCESS","2017-01-19T11:19:21.084Z","0.0","10.03"
+"Calendar widget","(/products-and-docs/widgets/calendar/) TECHNICAL TAB - Check that required fields are not empty","SUCCESS","2017-01-19T11:19:17.343Z","0.0","3.74"

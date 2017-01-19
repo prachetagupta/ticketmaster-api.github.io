@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>stories.site.widgets.EventDiscoveryWidget</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="stories/site/widgets/EventDiscoveryWidget.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">setup Event Discovery Widget</inOrderTo>
+  <asA keyword="As a">user of Ticketmaster Developer Portal</asA>
+  <iWantTo keyword="I want to">use the widget configurator to customize the layout of the widget,
+and have ability to grab a small code snippet to insert into 3-rd party websites</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that required fields are not empty and have default values">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">Then the required fields are not empty and have default values on the Event Discovery Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that embed code functionality works properly">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And change values for all possible fields on the Event Discovery Widget page</step>
+<step outcome="successful">And store all fields values on the Event Discovery Widget page</step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored values on the Event Discovery Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that Country field is changed accordingly Zip Code">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>When change value of ZipCode &lt;zipCode&gt; on Event Discovery Widget Page</step>
+<step>Then the Country Field contains appropriate value &lt;countryName&gt; on Event Discovery Widget Page</step>
+<parameters>
+<names><name>zipCode</name><name>countryName</name></names>
+<values><value>NW1</value><value>United Kingdom</value></values>
+<values><value>40104</value><value>United States</value></values>
+</parameters>
+
+<example keyword="Example:">{zipCode=NW1, countryName=United Kingdom}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When change value of ZipCode <parameter>NW1</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">Then the Country Field contains appropriate value <parameter>United Kingdom</parameter> on Event Discovery Widget Page</step>
+
+<example keyword="Example:">{zipCode=40104, countryName=United States}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When change value of ZipCode <parameter>40104</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">Then the Country Field contains appropriate value <parameter>United States</parameter> on Event Discovery Widget Page</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that KEYWORD field functionality works properly">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>When search events by keyword &lt;keyword&gt; on Event Discovery Widget page</step>
+<step>Then found events contains &lt;keyword&gt; on Event Discovery Widget page</step>
+<parameters>
+<names><name>keyword</name></names>
+<values><value>ADELE</value></values>
+<values><value>STING</value></values>
+</parameters>
+
+<example keyword="Example:">{keyword=ADELE}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When search events by keyword <parameter>ADELE</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then found events contains <parameter>ADELE</parameter> on Event Discovery Widget page</step>
+
+<example keyword="Example:">{keyword=STING}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When search events by keyword <parameter>STING</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then found events contains <parameter>STING</parameter> on Event Discovery Widget page</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that EVENT COUNT works properly">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>When set Event Count &lt;value&gt; on Event Discovery Widget page</step>
+<step>Then the number of events equals or less than Event Count &lt;value&gt;</step>
+<parameters>
+<names><name>value</name></names>
+<values><value>1</value></values>
+<values><value>100</value></values>
+</parameters>
+
+<example keyword="Example:">{value=1}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>1</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals or less than Event Count <parameter>1</parameter></step>
+
+<example keyword="Example:">{value=100}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>100</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals or less than Event Count <parameter>100</parameter></step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of EVENT COUNT">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>When set Event Count &lt;value&gt; on Event Discovery Widget page</step>
+<step>Then the number of events equals Event Count &lt;actualValue&gt;</step>
+<parameters>
+<names><name>value</name><name>actualValue</name></names>
+<values><value>0</value><value>1</value></values>
+<values><value>1</value><value>1</value></values>
+<values><value>100</value><value>100</value></values>
+<values><value>101</value><value>100</value></values>
+</parameters>
+
+<example keyword="Example:">{value=0, actualValue=1}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>0</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals Event Count <parameter>1</parameter></step>
+
+<example keyword="Example:">{value=1, actualValue=1}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>1</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals Event Count <parameter>1</parameter></step>
+
+<example keyword="Example:">{value=100, actualValue=100}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>100</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals Event Count <parameter>100</parameter></step>
+
+<example keyword="Example:">{value=101, actualValue=100}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When set Event Count <parameter>101</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the number of events equals Event Count <parameter>100</parameter></step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check boundary values of RADIUS">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>And change value of ZipCode 90015 on Event Discovery Widget Page</step>
+<step>When set Radius &lt;setValue&gt; on Event Discovery Widget page</step>
+<step>Then Radius value is &lt;actualValue&gt; on Event Discovery Widget page</step>
+<parameters>
+<names><name>setValue</name><name>actualValue</name></names>
+<values><value>0</value><value>1</value></values>
+<values><value>1</value><value>1</value></values>
+<values><value>19999</value><value>19999</value></values>
+<values><value>20000</value><value>19999</value></values>
+</parameters>
+
+<example keyword="Example:">{setValue=0, actualValue=1}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And change value of ZipCode <parameter>90015</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">When set Radius <parameter>0</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then Radius value is <parameter>1</parameter> on Event Discovery Widget page</step>
+
+<example keyword="Example:">{setValue=1, actualValue=1}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And change value of ZipCode <parameter>90015</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">When set Radius <parameter>1</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then Radius value is <parameter>1</parameter> on Event Discovery Widget page</step>
+
+<example keyword="Example:">{setValue=19999, actualValue=19999}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And change value of ZipCode <parameter>90015</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">When set Radius <parameter>19999</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then Radius value is <parameter>19999</parameter> on Event Discovery Widget page</step>
+
+<example keyword="Example:">{setValue=20000, actualValue=19999}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And change value of ZipCode <parameter>90015</parameter> on Event Discovery Widget Page</step>
+<step outcome="successful">When set Radius <parameter>20000</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then Radius value is <parameter>19999</parameter> on Event Discovery Widget page</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that RESET button works properly">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And store all fields values on the Event Discovery Widget page</step>
+<step outcome="successful">And change values for all possible fields on the Event Discovery Widget page</step>
+<step outcome="successful">When click reset button</step>
+<step outcome="successful">Then all fields have been reseted to defaults on the Event Discovery Widget page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check links">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When I click on the &apos;Get your own&apos; link to get api key</step>
+<step outcome="successful">Then The page is opened with url <parameter>https://developer-acct.ticketmaster.com</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) VISUAL TAB - Check Layout Resolutions">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>And switch to VISUAL Tab</step>
+<step>And set theme to poster</step>
+<step>And set layout resolution to &lt;layoutResolution&gt;</step>
+<step>When click on &quot;Get code&quot; button</step>
+<step>Then the pop-up Embedded Code is opened</step>
+<step>And embedded html code contains stored layout resolution</step>
+<parameters>
+<names><name>layoutResolution</name></names>
+<values><value>300x600</value></values>
+<values><value>300x250</value></values>
+<values><value>custom</value></values>
+</parameters>
+
+<example keyword="Example:">{layoutResolution=300x600}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>300x600</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+
+<example keyword="Example:">{layoutResolution=300x250}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>300x250</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+
+<example keyword="Example:">{layoutResolution=custom}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout resolution to <parameter>custom</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout resolution</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) VISUAL TAB - Check Layout Orientations">
+<examples keyword="Examples:">
+<step>Given open Event Discovery Widget page</step>
+<step>And switch to VISUAL Tab</step>
+<step>And set theme to poster</step>
+<step>And set layout orientation to &lt;orientation&gt;</step>
+<step>When click on &quot;Get code&quot; button</step>
+<step>Then the pop-up Embedded Code is opened</step>
+<step>And embedded html code contains stored layout orientation</step>
+<parameters>
+<names><name>orientation</name></names>
+<values><value>horizontal</value></values>
+<values><value>vertical</value></values>
+</parameters>
+
+<example keyword="Example:">{orientation=horizontal}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout orientation to <parameter>horizontal</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout orientation</step>
+
+<example keyword="Example:">{orientation=vertical}</example>
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">And switch to VISUAL Tab</step>
+<step outcome="successful">And set theme to poster</step>
+<step outcome="successful">And set layout orientation to <parameter>vertical</parameter></step>
+<step outcome="successful">When click on &quot;Get code&quot; button</step>
+<step outcome="successful">Then the pop-up Embedded Code is opened</step>
+<step outcome="successful">And embedded html code contains stored layout orientation</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="(/products-and-docs/widgets/event-discovery/) Event message - Check event message for invalid Keyword">
+<step outcome="successful">Given open Event Discovery Widget page</step>
+<step outcome="successful">When search events by keyword <parameter>ABRAKADABRA</parameter> on Event Discovery Widget page</step>
+<step outcome="successful">Then the event message is shown &quot;Here other options for you.&quot;</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

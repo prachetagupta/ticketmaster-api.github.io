@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/widgets/wordpress/) Verification for general page&apos;s elements" name="(/products-and-docs/widgets/wordpress/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5500" timestamp="2017-01-19T11:12:30.298Z" session-id="15282428-ac2e-43e6-9cc4-8a70a290e99e">
+  <user-story id="PD_Widget_WordPress" name="Pd  widget  word press" path="stories/site/products_and_docs/PD_Widget_WordPress.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  widget  word press" type="story"/>
+    <tag name="Products and docs/Pd widget word press" type="story"/>
+  </tags>
+  <test-group name="Given open WordPress Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4796">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for WordPress Widget Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="188">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="466">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="25">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

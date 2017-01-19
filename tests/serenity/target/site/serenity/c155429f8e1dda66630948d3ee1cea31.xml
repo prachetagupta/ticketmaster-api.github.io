@@ -1,0 +1,22 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that required fields are not empty and have default values" name="(/products-and-docs/widgets/event-discovery/) TECHNICAL TAB - Check that required fields are not empty and have default values" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7079" timestamp="2017-01-19T11:28:22.185Z" session-id="d21ca21e-3bd9-4c02-9f1a-96763c76b4b2">
+  <user-story id="EventDiscoveryWidget" name="Event discovery widget" path="stories/site/widgets/EventDiscoveryWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Event discovery widget" type="story"/>
+    <tag name="Widgets/Event discovery widget" type="story"/>
+  </tags>
+  <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="6657">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then the required fields are not empty and have default values on the Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="373">
+      <description>Check that required fields are not empty</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="37">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

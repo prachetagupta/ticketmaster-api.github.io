@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/apis/discovery/v2/) Verification for general page&apos;s elements" name="(/products-and-docs/apis/discovery/v2/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7078" timestamp="2017-01-19T11:31:45.590Z" session-id="fd18c708-02fe-4c84-bfd0-46efad15b553">
+  <user-story id="PD_DiscoveryAPIV2" name="Pd  discovery apiv2" path="stories/site/products_and_docs/PD_DiscoveryAPIV2.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  discovery apiv2" type="story"/>
+    <tag name="Products and docs/Pd discovery apiv2" type="story"/>
+  </tags>
+  <test-group name="Given open Discovery API v2 page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5900">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Discovery API v2 Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="274">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="842">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="36">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

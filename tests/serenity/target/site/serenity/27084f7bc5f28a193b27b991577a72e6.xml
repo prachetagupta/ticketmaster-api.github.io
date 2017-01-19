@@ -1,0 +1,131 @@
+<acceptance-test-run title="(/products-and-docs/widgets/) Verification for all the page&apos;s links" name="(/products-and-docs/widgets/) Verification for all the page&apos;s links" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20845" timestamp="2017-01-19T11:16:11.999Z" session-id="a810b6ce-c1b7-4a07-80cd-dd10c68acc32">
+  <user-story id="PD_Widgets" name="Pd  widgets" path="stories/site/products_and_docs/PD_Widgets.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  widgets" type="story"/>
+    <tag name="Products and docs/Pd widgets" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>elementKey</header>
+      <header>pageURL</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Checkout Widget Button</value>
+        <value>{url}/products-and-docs/widgets/checkout/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Discovery Widget Button</value>
+        <value>{url}/products-and-docs/widgets/event-discovery/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Countdown Widget Button</value>
+        <value>{url}/products-and-docs/widgets/countdown/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Calendar Widget Button</value>
+        <value>{url}/products-and-docs/widgets/calendar/</value>
+        <value>//h1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>WordPress Widget Learn Button</value>
+        <value>{url}/products-and-docs/widgets/wordpress/</value>
+        <value>//h1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {elementKey=Checkout Widget Button, pageURL={url}/products-and-docs/widgets/checkout/, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="824">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Checkout Widget Button} element of Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2806">
+        <description>Validate and click element: Checkout Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Widgets page has {{url}/products-and-docs/widgets/checkout/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="36">
+        <description>Check if page is opened: {url}/products-and-docs/widgets/checkout/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[2] {elementKey=Discovery Widget Button, pageURL={url}/products-and-docs/widgets/event-discovery/, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1944">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Discovery Widget Button} element of Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="769">
+        <description>Validate and click element: Discovery Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Widgets page has {{url}/products-and-docs/widgets/event-discovery/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="3729">
+        <description>Check if page is opened: {url}/products-and-docs/widgets/event-discovery/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[3] {elementKey=Countdown Widget Button, pageURL={url}/products-and-docs/widgets/countdown/, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="923">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Countdown Widget Button} element of Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="2245">
+        <description>Validate and click element: Countdown Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Widgets page has {{url}/products-and-docs/widgets/countdown/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="566">
+        <description>Check if page is opened: {url}/products-and-docs/widgets/countdown/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[4] {elementKey=Calendar Widget Button, pageURL={url}/products-and-docs/widgets/calendar/, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="707">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {Calendar Widget Button} element of Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1769">
+        <description>Validate and click element: Calendar Widget Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Widgets page has {{url}/products-and-docs/widgets/calendar/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="951">
+        <description>Check if page is opened: {url}/products-and-docs/widgets/calendar/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[5] {elementKey=WordPress Widget Learn Button, pageURL={url}/products-and-docs/widgets/wordpress/, pageTitle=//h1}" result="SUCCESS">
+    <test-group name="Given open Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1426">
+        <description>Open page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When check visibility and click {WordPress Widget Learn Button} element of Widgets page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="1376">
+        <description>Validate and click element: WordPress Widget Learn Button</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then check that new page opened from Widgets page has {{url}/products-and-docs/widgets/wordpress/} and {//h1}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="721">
+        <description>Check if page is opened: {url}/products-and-docs/widgets/wordpress/, //h1, http://127.0.0.1:4000</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

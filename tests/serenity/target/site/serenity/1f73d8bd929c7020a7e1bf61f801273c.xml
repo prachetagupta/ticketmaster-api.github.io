@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/apis/getting-started/) Verification for general page&apos;s elements" name="(/products-and-docs/apis/getting-started/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="2464" timestamp="2017-01-19T11:23:39.002Z" session-id="edb23424-ec75-4226-aa9c-6950566f72c0">
+  <user-story id="PD_GettingStarted" name="Pd  getting started" path="stories/site/products_and_docs/PD_GettingStarted.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  getting started" type="story"/>
+    <tag name="Products and docs/Pd getting started" type="story"/>
+  </tags>
+  <test-group name="Given open Getting Started page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1619">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Getting Started Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="553">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="252">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="26">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

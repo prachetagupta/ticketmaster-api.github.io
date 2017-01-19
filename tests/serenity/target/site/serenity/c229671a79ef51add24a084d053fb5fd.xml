@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/apis/deals-api/) Verification for general page&apos;s elements" name="(/products-and-docs/apis/deals-api/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6433" timestamp="2017-01-19T11:11:51.610Z" session-id="31d5cbc0-fc54-42a4-a141-e7a4328625ae">
+  <user-story id="PD_DealsAPI" name="Pd  deals API" path="stories/site/products_and_docs/PD_DealsAPI.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  deals API" type="story"/>
+    <tag name="Products and docs/Pd deals api" type="story"/>
+  </tags>
+  <test-group name="Given open Deals API page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="5442">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Deals API Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="228">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="377">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="144">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

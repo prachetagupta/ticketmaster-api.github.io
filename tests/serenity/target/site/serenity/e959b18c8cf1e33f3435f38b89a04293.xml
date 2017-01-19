@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/widgets/event-discovery/) Verification for general page&apos;s elements" name="(/products-and-docs/widgets/event-discovery/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5371" timestamp="2017-01-19T11:16:41.251Z" session-id="1799cc85-1431-46d1-8c14-ef7c999b68c2">
+  <user-story id="PD_Widget_EventDiscovery" name="Pd  widget  event discovery" path="stories/site/products_and_docs/PD_Widget_EventDiscovery.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  widget  event discovery" type="story"/>
+    <tag name="Products and docs/Pd widget event discovery" type="story"/>
+  </tags>
+  <test-group name="Given open Event Discovery Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4725">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Event Discovery Widget Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="125">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="468">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="24">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

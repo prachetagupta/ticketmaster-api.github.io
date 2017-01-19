@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/products-and-docs/tutorials/events-search/search_events_with_discovery_api_html) Verification for general page&apos;s elements" name="(/products-and-docs/tutorials/events-search/search_events_with_discovery_api_html) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4397" timestamp="2017-01-19T11:18:18.089Z" session-id="4efa0063-095b-4497-8cac-d055f5e5f4ad">
+  <user-story id="PD_Tutorials_EventSearch_SearchEventWithDiscoveryAPI" name="Pd  tutorials  event search  search event with discovery API" path="stories/site/products_and_docs/PD_Tutorials_EventSearch_SearchEventWithDiscoveryAPI.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  tutorials  event search  search event with discovery API" type="story"/>
+    <tag name="Products and docs/Pd tutorials event search search event with discovery api" type="story"/>
+  </tags>
+  <test-group name="Given open Tutorials EventSearch SearchEventWithDiscoveryAPI page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3469">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Tutorials EventSearch SearchEventWithDiscoveryAPI Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="387">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="481">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="38">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

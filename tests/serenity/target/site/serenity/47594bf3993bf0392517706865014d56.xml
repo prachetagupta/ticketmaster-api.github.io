@@ -1,0 +1,74 @@
+<acceptance-test-run title="(/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window" name="(/products-and-docs/widgets/calendar/) Check RESET button functionality on Embedded Code Pop-up window" steps="17" successful="17" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11607" timestamp="2017-01-19T11:19:48.755Z" session-id="d1700774-dded-4930-a313-a96950a3a8ff">
+  <user-story id="CalendarWidget" name="Calendar widget" path="stories/site/widgets/CalendarWidget.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Widgets" type="feature"/>
+    <tag name="Calendar widget" type="story"/>
+    <tag name="Widgets/Calendar widget" type="story"/>
+  </tags>
+  <test-group name="Given open Calendar Widget page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2507">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="And store values of: {apiKey,keyword,zipCode,radius}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="411">
+      <description>Store value: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="88">
+      <description>Store value: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="74">
+      <description>Store value: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="109">
+      <description>Store value: radius</description>
+    </test-step>
+  </test-group>
+  <test-group name="And change values for: {apiKey,keyword,zipCode,radius}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="746">
+      <description>Set random value for: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="210">
+      <description>Set random value for: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1789">
+      <description>Set random value for: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1152">
+      <description>Set random value for: radius</description>
+    </test-step>
+  </test-group>
+  <test-group name="When click reset button on Calendar Widget Page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="671">
+      <description>Reset form</description>
+    </test-step>
+  </test-group>
+  <test-group name="And click on &quot;Get code&quot; button" result="SUCCESS">
+    <test-step result="SUCCESS" duration="899">
+      <description>Click on get button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then the pop-up Embedded Code is opened" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2566">
+      <description>Check that popup embedded code is opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="And embedded html code contains stored values of: {apiKey,keyword,zipCode,radius}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="73">
+      <description>Embedded code contains stored value for: apiKey</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="73">
+      <description>Embedded code contains stored value for: keyword</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="95">
+      <description>Embedded code contains stored value for: zipCode</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="71">
+      <description>Embedded code contains stored value for: radius</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="29">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,38 @@
+<acceptance-test-run title="(developer-acct.ticketmaster.com/user/register) Verification for general page&apos;s elements" name="(developer-acct.ticketmaster.com/user/register) Verification for general page&apos;s elements" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="25345" timestamp="2017-01-19T11:12:04.866Z" session-id="6a29baa1-74ec-4c17-abf6-326feed872e5">
+  <user-story id="CreateNewAccount" name="Create new account" path="stories/site/pantheon/CreateNewAccount.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Pantheon" type="feature"/>
+    <tag name="Create new account" type="story"/>
+    <tag name="Pantheon/Create new account" type="story"/>
+  </tags>
+  <test-group name="Given open Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2395">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon LogIn page from Home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="306">
+      <description>Click log in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1229">
+      <description>Is page opened</description>
+    </test-step>
+  </test-group>
+  <test-group name="When navigate to Pantheon Create New Account page from LogIn page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="899">
+      <description>Click create new account button</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Pantheon Create New Account page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="146">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="20279">
+      <description>Check general page elements</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="28">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

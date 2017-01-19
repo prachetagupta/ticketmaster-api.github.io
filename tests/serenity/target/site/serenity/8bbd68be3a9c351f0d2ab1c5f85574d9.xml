@@ -1,0 +1,25 @@
+<acceptance-test-run title="(/api-explorer/) Verification for general page&apos;s elements" name="(/api-explorer/) Verification for general page&apos;s elements" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5765" timestamp="2017-01-19T11:18:37.413Z" session-id="30c27962-8c5d-473a-9819-59a179b33f9f">
+  <user-story id="PD_TopPicksAPI" name="Pd  top picks API" path="stories/site/products_and_docs/PD_TopPicksAPI.story"/>
+  <tags>
+    <tag name="Site" type="capability"/>
+    <tag name="Site/Products and docs" type="feature"/>
+    <tag name="Pd  top picks API" type="story"/>
+    <tag name="Products and docs/Pd top picks api" type="story"/>
+  </tags>
+  <test-group name="Given open Top Picks API page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4986">
+      <description>Open page</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then check general page elements for Top Picks API Page, where DISQUS = {true} and LeftMenu = {true}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="109">
+      <description>Check if title is correct</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="544">
+      <description>Check general page elements: true, true</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="102">
+    <description>Clear cookies and local storage</description>
+  </test-step>
+</acceptance-test-run>

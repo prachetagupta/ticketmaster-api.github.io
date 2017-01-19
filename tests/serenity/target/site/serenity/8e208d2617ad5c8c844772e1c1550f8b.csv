@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"User account","(developer-acct.ticketmaster.com/user/1554/apps) Verification for general page's elements [Login - Password field - enter valid password]","SUCCESS","2017-01-19T11:31:17.865Z","0.0","27.65"
+"Edit profile","(developer-acct.ticketmaster.com/user/1554/edit) Verification for general page's elements","SUCCESS","2017-01-19T11:14:17.596Z","0.0","32.99"
+"User log in","(developer-acct.ticketmaster.com/user/login) Verification for general page's elements","SUCCESS","2017-01-19T11:14:50.664Z","0.0","24.18"
+"Request new password","(developer-acct.ticketmaster.com/user/password) Verification for general page's elements","SUCCESS","2017-01-19T11:30:52.394Z","0.0","25.4"
+"Create new account","(developer-acct.ticketmaster.com/user/register) Verification for general page's elements","SUCCESS","2017-01-19T11:12:04.866Z","0.0","25.35"
